@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adidas | Project for College</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <nav>
+            <a class="logo" href="#">Adidas</a>
+            <ul id="navlinks" class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Men</a></li>
+                <li><a href="#">Women</a></li>
+                <li><a href="#">Kids</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+        <section class="content">
+            <div class="text">
+                <h2>
+                    Adidas Egypt, <br>
+                    Running Shoes
+                </h2>
+                <p>
+                    Adidas shoes combine style, comfort, and durability,
+                    making them perfect for sports, casual wear, and everyday activities.
+                </p>
+            </div>
+            <section class="slider-container">
+                <div class="slider">
+                    <img class="slide" src="./assets/images/20b-0001-img-8639-removebg-preview.png" alt="Shoe 1">
+                    <img class="slide" src="./assets/images/shoes.2-removebg-preview.png" alt="Shoe 2">
+                    <img class="slide" src="./assets/images/22-3-0019-img-6852-removebg-preview.png" alt="Shoe 3">
+                </div>
+                <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+                <button class="next" onclick="changeSlide(1)">&#10095;</button>
+            </section>
+        </section>
+    </main>
+    <script src="type.js"></script>
+</body>
+</html>
