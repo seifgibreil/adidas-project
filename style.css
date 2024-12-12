@@ -38,7 +38,8 @@ body {
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    position: relative;   
+    position: relative;  
+    flex-direction: column; 
 }
 
 body::after {
@@ -129,6 +130,8 @@ nav ul li a:hover {
 .content .text {
     color: #fff;
     width: 40%;
+    animation: slideInFromLeft 2s ease-in-out;
+
 }
 
 h2 {
@@ -295,5 +298,17 @@ button:hover {
 
     body::after {
         clip-path: circle(50% at bottom);
+    }
+}
+
+/* Keyframes Animation */
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
     }
 }
